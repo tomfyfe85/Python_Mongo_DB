@@ -70,7 +70,7 @@ item_13 = {"item_name" : "leather bookmark",
 "item_description" : "hand-made, natural colors used"
 }
 
-item_14 = {"item_name" : "maple syrup",
+item_14 = {"item_name" : "beer",
 "category" : "food",
 "item_description" : "A-grade, dark, organic, keep in refrigerator after opening",
 "price" : 25,
@@ -81,6 +81,5 @@ item_14 = {"item_name" : "maple syrup",
 from pymongo_get_database import get_database
 
 dbname = get_database()
-collection_name = dbname["user_1_items"]
 
 dbname["user_1_items"].insert_many([item_5,item_6,item_7,item_8,item_9,item_10,item_11,item_12, item_13, item_14])
